@@ -59,7 +59,7 @@ layers:
   - '&macro_JPCOMMA2'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mm_u'
+  - {t: '&macro_U', s: A}
   - {t: '&macro_SI', s: S}
   - {t: '&macro_TE', s: D}
   - {t: '&macro_KE', s: F}
