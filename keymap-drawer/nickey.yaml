@@ -1,9 +1,142 @@
 layout: {zmk_keyboard: nickey}
 layers:
-  default: [TAB, Q, W, E, R, T, Y, U, I, O, P, '''', LCTRL, A, S, D, F, G, H, J, K, L, ;, '-', LSHFT, Z, X, C, V, B, LEFT WIN, DELETE, N, M, ',', ., /, '=', '2',
-    '1', SPACE, BSPC, RET, RALT]
-  '1':
-  - ESCAPE
+  DEFAULT:
+  - ESC
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - BACKSPACE
+  - LCTRL
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ''''
+  - LSHFT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - '&macro_IMEOFF'
+  - '&macro_IMEON'
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - RSHFT
+  - LGUI
+  - SPACE
+  - {t: ENTER, h: NUMBER}
+  - {t: ENTER, h: SYMBOL}
+  - SPACE
+  - RALT
+  NICOLA:
+  - '&macro_ESC'
+  - {t: '&macro_JPPERIOD', s: Q}
+  - {t: '&macro_KA', s: W}
+  - {t: '&macro_TA', s: E}
+  - {t: '&macro_KO', s: R}
+  - {t: '&macro_SA', s: T}
+  - {t: '&macro_RA', s: Y}
+  - {t: '&macro_TI', s: U}
+  - {t: '&macro_KU', s: I}
+  - {t: '&macro_TU', s: O}
+  - '&macro_JPCOMMA2'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mm_u'
+  - {t: '&macro_SI', s: S}
+  - {t: '&macro_TE', s: D}
+  - {t: '&macro_KE', s: F}
+  - {t: '&macro_SE', s: G}
+  - {t: '&macro_HA', s: H}
+  - {t: '&macro_TO', s: J}
+  - {t: '&macro_KI', s: K}
+  - {t: '&macro_I', s: L}
+  - '&macru_NN'
+  - '&macro_JPBACKSPACE'
+  - {t: ▽, type: trans}
+  - {t: '&macro_JPTEN', s: Z}
+  - {t: '&macro_HI', s: X}
+  - {t: '&macro_SU', s: C}
+  - {t: '&macro_HU', s: V}
+  - {t: '&macro_HE', s: B}
+  - '&macro_IMEOFF'
+  - '&macro_IMEON'
+  - {t: '&macro_ME', s: N}
+  - {t: '&macro_SO', s: M}
+  - '&macro_NE'
+  - '&macro_HO'
+  - '&macro_JPNAKATEN'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - DELETE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  SYMBOL:
+  - TAB
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - '*'
+  - (
+  - Sft+INT3
+  - INT3
+  - {t: ▽, type: trans}
+  - LALT
+  - DEL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '-'
+  - '='
+  - '['
+  - ']'
+  - '#'
+  - ''''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - _
+  - +
+  - '{'
+  - '}'
+  - Sft+#
+  - Sft+INT1
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  NUMBER:
+  - TAB
   - '1'
   - '2'
   - '3'
@@ -14,59 +147,18 @@ layers:
   - '8'
   - '9'
   - '0'
-  - '`'
+  - DEL
   - {t: ▽, type: trans}
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
+  - {t: ▽, type: trans}
+  - HOME
+  - PG DN
+  - PG UP
+  - END
   - LEFT
   - DOWN
   - UP
   - RIGHT
   - {t: ▽, type: trans}
-  - '~'
-  - {t: ▽, type: trans}
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - '3'
-  - '&studio_unlock'
-  - '['
-  - (
-  - )
-  - ']'
-  - \
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - DELETE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  '2':
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '?'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '%'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '@'
-  - '#'
-  - $
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '!'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -74,13 +166,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '*'
-  - ^
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -90,50 +180,217 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  '3':
+  SYS:
   - BT CLR
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
+  - CAPSLOCK
+  - KP NUMLOCK
+  - SCROLLLOCK
+  - {t: ▽, type: trans}
+  - '&studio_unlock'
+  - OUT TOG
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - BT CLR ALL
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - F12
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+combos:
+- p: [1, 39]
+  k: '&macro_XA'
+  l: [NICOLA]
+- p: [2, 39]
+  k: '&macro_E'
+  l: [NICOLA]
+- p: [3, 39]
+  k: '&macro_RI'
+  l: [NICOLA]
+- p: [4, 39]
+  k: '&macro_XYA'
+  l: [NICOLA]
+- p: [5, 39]
+  k: '&macro_RE'
+  l: [NICOLA]
+- p: [6, 39]
+  k: '&macro_PA'
+  l: [NICOLA]
+- p: [7, 39]
+  k: '&macro_DI'
+  l: [NICOLA]
+- p: [8, 39]
+  k: '&macro_GU'
+  l: [NICOLA]
+- p: [9, 39]
+  k: '&macro_DU'
+  l: [NICOLA]
+- p: [10, 39]
+  k: '&macro_PI'
+  l: [NICOLA]
+- p: [13, 39]
+  k: '&macro_WO'
+  l: [NICOLA]
+- p: [14, 39]
+  k: '&macro_A'
+  l: [NICOLA]
+- p: [15, 39]
+  k: '&macro_NA'
+  l: [NICOLA]
+- p: [16, 39]
+  k: '&macro_XYU'
+  l: [NICOLA]
+- p: [17, 39]
+  k: '&macro_MO'
+  l: [NICOLA]
+- p: [18, 39]
+  k: '&macro_BA'
+  l: [NICOLA]
+- p: [19, 39]
+  k: '&macro_DO'
+  l: [NICOLA]
+- p: [20, 39]
+  k: '&macro_GI'
+  l: [NICOLA]
+- p: [21, 39]
+  k: '&macro_PO'
+  l: [NICOLA]
+- p: [25, 39]
+  k: '&macro_XU'
+  l: [NICOLA]
+- p: [26, 39]
+  k: '&macro_JPMINUS2'
+  l: [NICOLA]
+- p: [27, 39]
+  k: '&macro_RO'
+  l: [NICOLA]
+- p: [28, 39]
+  k: '&macro_YA'
+  l: [NICOLA]
+- p: [29, 39]
+  k: '&macro_XI'
+  l: [NICOLA]
+- p: [32, 39]
+  k: '&macro_PU'
+  l: [NICOLA]
+- p: [33, 39]
+  k: '&macro_ZO'
+  l: [NICOLA]
+- p: [34, 39]
+  k: '&macro_PE'
+  l: [NICOLA]
+- p: [35, 39]
+  k: '&macro_BO'
+  l: [NICOLA]
+- p: [2, 42]
+  k: '&macro_GA'
+  l: [NICOLA]
+- p: [3, 42]
+  k: '&macro_DA'
+  l: [NICOLA]
+- p: [4, 42]
+  k: '&macro_GO'
+  l: [NICOLA]
+- p: [5, 42]
+  k: '&macro_ZA'
+  l: [NICOLA]
+- p: [6, 42]
+  k: '&macro_YO'
+  l: [NICOLA]
+- p: [7, 42]
+  k: '&macro_NI'
+  l: [NICOLA]
+- p: [8, 42]
+  k: '&macro_RU'
+  l: [NICOLA]
+- p: [9, 42]
+  k: '&macro_MA'
+  l: [NICOLA]
+- p: [10, 42]
+  k: '&macro_XE'
+  l: [NICOLA]
+- p: [13, 42]
+  k: '&macro_VU'
+  l: [NICOLA]
+- p: [14, 42]
+  k: '&macro_JI'
+  l: [NICOLA]
+- p: [15, 42]
+  k: '&macro_DE'
+  l: [NICOLA]
+- p: [16, 42]
+  k: '&macro_GE'
+  l: [NICOLA]
+- p: [17, 42]
+  k: '&macro_ZE'
+  l: [NICOLA]
+- p: [18, 42]
+  k: '&macro_MI'
+  l: [NICOLA]
+- p: [19, 42]
+  k: '&macro_O'
+  l: [NICOLA]
+- p: [20, 42]
+  k: '&macro_NO'
+  l: [NICOLA]
+- p: [21, 42]
+  k: '&macro_XYO'
+  l: [NICOLA]
+- p: [22, 42]
+  k: '&macro_XTU'
+  l: [NICOLA]
+- p: [26, 42]
+  k: '&macro_BI'
+  l: [NICOLA]
+- p: [27, 42]
+  k: '&macro_ZU'
+  l: [NICOLA]
+- p: [28, 42]
+  k: '&macro_BU'
+  l: [NICOLA]
+- p: [29, 42]
+  k: '&macro_BE'
+  l: [NICOLA]
+- p: [32, 42]
+  k: '&macro_NU'
+  l: [NICOLA]
+- p: [33, 42]
+  k: '&macro_YU'
+  l: [NICOLA]
+- p: [34, 42]
+  k: '&macro_MU'
+  l: [NICOLA]
+- p: [35, 42]
+  k: '&macro_WA'
+  l: [NICOLA]
+- p: [36, 42]
+  k: '&macro_XO'
+  l: [NICOLA]
