@@ -68,7 +68,7 @@ layers:
   - {t: '&macro_TO', s: J}
   - {t: '&macro_KI', s: K}
   - {t: '&macro_I', s: L}
-  - '&macru_NN'
+  - '&macro_NN'
   - '&macro_JPBACKSPACE'
   - {t: ▽, type: trans}
   - {t: '&macro_JPTEN', s: Z}
