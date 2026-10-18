@@ -66,7 +66,7 @@
 &macro_ESC  &mm_JPPERIOD &mm_KA  &mm_TA  &mm_KO  &mm_SA                            &mm_RA &mm_TI &mm_KU    &mm_TU    &macro_JPCOMMA2  &trans
 &trans      &mm_u        &mm_SI  &mm_TE  &mm_KE  &mm_SE                            &mm_HA &mm_TO &mm_KI    &mm_I     &macru_NN        &macro_JPBACKSPACE
 &trans      &mm_JPTEN    &mm_HI  &mm_SU  &mm_HU  &mm_HE &macro_IMEOFF &macro_IMEON &mm_ME &mm_SO &macro_NE &macro_HO &macro_JPNAKATEN &trans
-                                         &trans  &trans &trans        &kp DELETE   &trans &trans
+                                         &trans  &trans &trans        &trans   &trans &trans
             >;
             label = "NICOLA";
         };
@@ -76,7 +76,7 @@
 &kp TAB   &kp EXCL &kp AT    &kp HASH   &kp DLLR  &kp PRCNT                  &kp CARET &kp AMPS &kp ASTERISK &kp LEFT_PARENTHESIS &kp LS(INT3) &kp INT3
 &trans    &kp LALT &kp DEL   &trans     &trans    &trans                     &kp MINUS &kp EQUAL &kp LBKT &kp RBKT &kp NUHS  &kp SQT
 &trans    &trans   &trans    &trans     &trans    &trans  &trans    &trans   &kp UNDER &kp PLUS &kp LBRC &kp RBRC &kp LS(NUHS) &kp LS(INT1)
-                                        &trans    &trans  &trans    &trans   &trans    &trans
+                                        &mo SYS    &trans  &trans    &trans   &trans    &mo SYS
             >;
             label = "SYMBOL";
         };
@@ -86,13 +86,13 @@
 &kp TAB &kp N1  &kp N2   &kp N3    &kp N4    &kp N5          &kp N6  &kp N7  &kp N8  &kp N9  &kp N0   &kp DEL
 &trans  &trans  &kp HOME &kp PG_DN &kp PG_UP &kp END         &kp LEFT &kp DOWN &kp UP &kp RIGHT  &trans  &trans
 &trans  &trans  &trans   &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans
-                                             &trans  &trans  &trans    &trans  &trans  &trans
+                                             &mo SYS  &trans  &trans    &trans  &trans  &mo SYS
             >;
             label = "NUMBER";
         };
         sys_layer {
             bindings = <
-&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4          &kp CAPSLOCK  &kp KP_NUMLOCK  &kp SCROLLLOCK  &trans  &studio_unlock  &out OUT_TOG
+&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4          &none         &none           &none           &none   &none           &none
 &trans       &trans        &trans        &trans        &trans        &trans                &none         &none           &none           &none   &none           &none
 &kp F1       &kp F2        &kp F3        &kp F4        &kp F5        &kp F6  &trans &trans &kp F7        &kp F8          &kp F9          &kp F10 &kp F11         &kp F12
                                                        &trans        &trans  &trans &trans &trans        &trans
