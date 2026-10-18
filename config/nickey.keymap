@@ -22,7 +22,7 @@
     behaviors {
         #include "macros.dtsi"
         #include "behaviors.keymap"
-
+/*
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
@@ -31,14 +31,14 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
-
+*/
     };
 
     combos {
         compatible = "zmk,combos";
         #include "combos.keymap"
     };
-
+/*
     macros {
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
@@ -47,7 +47,7 @@
             label = "TO_LAYER_0";
         };
     };
-
+*/
     keymap {
         compatible = "zmk,keymap";
 
