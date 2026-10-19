@@ -177,8 +177,8 @@ layers:
   - SYS
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&macro_IMEOFF'
+  - '&macro_IMEON'
   - SYS
   SYS:
   - BT CLR
